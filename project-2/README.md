@@ -1,1 +1,1 @@
-project-1:This project is a design of facebook login page
+project-2: E-commerce website designed by using tailwind CSS/ postcss. full responsive in any device.

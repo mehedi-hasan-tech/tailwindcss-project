@@ -1,0 +1,37 @@
+@import "tailwindcss";
+/* @plugin "tailwind-scrollbar-hide"; */
+
+
+/* hide scrollbar by menually */
+@utility scrollbar-hide {
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+};
+
+
+@theme {
+    --breakpoint-sm: 34rem;/* 480+32px */
+    --breakpoint-md: 48rem;/* 768px */
+    --breakpoint-lg: 66rem;/* 1056px */
+    --breakpoint-xl: 90rem;/* 1440px */
+    --color-brightRed: #f25f3a;
+    --color-darkGrayishBlue: #9095a7;
+    --color-primary: #222121;
+    --color-primary2: #75787e;
+    --color-darkBlue:#010918;
+            
+}
+
+.hide-class {
+    overflow-y: hidden;
+}
+.hide-class2{
+    display: none;
+}
+.active{
+    background-color: white;
+    color: black;
+}

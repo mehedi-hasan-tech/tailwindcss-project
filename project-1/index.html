@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="src/input.css" />
+  <title>Freepic image</title>
+</head>
+
+<body class="">
+  <div class="text-white bg-darkBlue hide-scrollbar grid-cols-1 sm:grid sm:grid-cols-[4%_96%]" class="" id="header-menu">
+    <!-- sidebar grid col 1-->
+    <aside class="z-50 ">
+    <div class="group hover:w-64 bg-primary h-screen p-1 hidden hover:items-start sm:block">
+        <div class="flex flex-col items-start mt-2 mb-2 text-white">
+          <div class="mb-3 w-full lg:p-2 xl:p-3 flex gap-12">
+            <h1 class="rounded-md w-6 h-6 text-center font-bold">🅿️</h1>
+            <h1 class="opacity-0 group-hover:opacity-100">Personal</h1>
+          </div>
+          <div class="flex flex-col items-start w-full">
+            <a href="#" class="flex items-center w-full gap-12  rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+              <div class="flex justify-center">
+                <i class="fas fa-home"></i>
+              </div>
+              <span class="opacity-0 group-hover:opacity-100">Home</span>
+            </a>
+            <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Analysis</span>
+          </a>
+            <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-globe"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Explore</span>
+          </a>
+          </div>
+        </div>
+        <hr class="mb-1"/>
+        <div class="flex flex-col items-start text-white">
+          <div class="flex flex-col items-start w-full">
+            <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-image"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Image</span>
+          </a>
+          <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-video"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Video</span>
+          </a>
+          <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-tools"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Video</span>
+          </a>
+          <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-magic"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Video</span>
+          </a>
+          </div>
+        </div>
+        <hr class="mb-2"/>
+        <div class="flex flex-col items-start mt-2 text-white">
+          <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 mb-3 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-folder-open"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Folder</span>
+          </a>
+          <a href="#" class="flex items-center w-full gap-12 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-history"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">History</span>
+          </a>
+        </div>
+        <div class="flex flex-col items-center text-white absolute bottom-0">
+         <a href="#" class="flex items-center w-62 gap-14 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-bell"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">Notification</span>
+          </a>
+          <a href="#" class="flex items-center w-62 gap-14 rounded-lg hover:bg-white/10 transition-colors cursor-pointer py-1 md:p-1 lg:p-2 xl:p-3">
+            <div class="flex justify-center">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <span class="opacity-0 group-hover:opacity-100">More</span>
+          </a>
+        </div>
+      
+        <!-- <aside class="group fixed top-0 left-0">
+
+        </aside> -->
+      </div>
+    </aside>
+    <!-- main body grid col 2 -->
+    <div class="overflow-y-auto h-screen scrollbar-hide">
+      <div class="">
+        <!-- header  -->
+        <header class="z-40 p-4 flex justify-between items-center top-0 sticky bg-darkBlue">
+          <!-- Freefik logo -->
+          <div class="flex items-center relative space-x-2.5">
+            <div class="text-white sm:hidden" id="hambarger">
+              <i class="fas fa-bars cursor-pointer"></i>
+            </div>
+            <h1 class="font-sans font-bold text-2xl text-white">FREEP!K</h1>
+          </div>
+          <!-- mobile view sidebar control -->
+          <div class="sm:hidden bg-darkBlue scrollbar-hide" id="hambarger2">
+            <div class="p-4 container mx-auto sm:flex flex-col absolute bg-darkBlue left-0 top-0 z-50 hidden h-screen"
+              id="menu">
+              <!-- mobile view logo and cross icon -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-bold text-3xl">FREEP!K</h1>
+                </div>
+                <div class="">
+                  <div class="cursor-pointer" id="cross-icon">
+                    <i class="fas fa-times mr-4"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <select class="mt-4 bg-black w-[98%] px-4 p-1 rounded border z-50" name="" id="">
+                  <option value="personal">🅿️Personal</option>
+                  <option value="personal">🅿️Personal</option>
+                  <option value="personal">🅿️Personal</option>
+                  <option value="personal">🅿️Personal</option>
+                </select>
+                <ul class="py-3">
+                  <li class="py-2.5">
+                    <i class="fas fa-home"><a href="#" class="px-4">Home</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-shapes"><a href="#" class="px-4">Stock</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-globe"><a href="#" class="px-4">Community</a></i>
+                  </li>
+                </ul>
+                <hr />
+                <p class="text-gray-400">Pined</p>
+                <ul class="py-3">
+                  <li class="py-2.5">
+                    <i class="fas fa-image"><a href="#" class="px-4">Image Generator</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-video"><a href="#" class="px-4">Vedio Generator</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-comment-dots"><a href="#" class="px-4">Assistant</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-infinity"><a href="#" class="px-4">Spaces</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-tools"><a href="#" class="px-4">All tools</a></i>
+                  </li>
+                </ul>
+                <hr />
+                <ul class="py-3">
+                  <li class="py-2.5">
+                    <i class="fas fa-folder"><a href="#" class="px-4">View Project</a></i>
+                  </li>
+                  <li class="py-2.5">
+                    <i class="fas fa-history"><a href="#" class="px-4">history</a></i>
+                  </li>
+                </ul>
+                <hr />
+              </div>
+              <div class="py-4 flex items-center justify-between">
+                <div class="absolute bottom-0">
+                  <i class="fas fa-question px-2 cursor-pointer"></i>
+                  <i class="fas fa-box px-2 cursor-pointer"></i>
+                  <i class="fas fa-moon px-2 cursor-pointer"></i>
+                  <i class="fas fa-bell px-2 cursor-pointer"></i>
+                </div>
+                <div class="absolute bottom-0 right-0 mr-4">
+                  <i class="fas fa-ellipsis-h cursor-pointer"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- search box -->
+          <div class="hidden sm:block">
+            <div class="relative hidden md:block">
+              <input type="search" name="" id="" placeholder="Search for Image"
+                class="border-2 rounded-full w-3/2 bg-primary outline-none px-5 md:w-96 lg:w-2xl" />
+              <div class="absolute top-1/2 -translate-y-1/2 md:right-0 lg:right-0 space-x-1 mr-3.5 bg-primary h-6">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-microphone"></i>
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <!-- user and pricing -->
+          <div class="flex items-center justify-around gap-5">
+            <h1 class="text-brightRed font-semibold">Pricing</h1>
+            <div
+              class="rounded-full border-2 w-8 h-8 text-center font-semibold bg-violet-500 text-white border-transparent cursor-pointer">
+              M
+            </div>
+          </div>
+        </header>
+        <!-- tab mood search icon -->
+        <div class="z-30 top-16 sticky bg-darkBlue" id="search">
+          <div class="relative p-4 block md:hidden ">
+            <input type="search" name="" id="" placeholder="Search for Image"
+              class="text-white border-2 rounded-full w-full bg-primary outline-none px-6" />
+            <div class="text-white z-40 space-x-2.5 px-3 flex items-center absolute right-8 top-1/2 -translate-y-1/2 bg-primary h-6">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-times"></i>
+              <i class="fas fa-microphone"></i>
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+        </div>
+        <!-- serch result text -->
+        <div
+          class="px-4 py-1 z-40 top-16 sticky bg-darkBlue items-center justify-between hidden sm:flex sm:top-31 md:top-16">
+          <h1 class="font-semibold">
+            Search result demo 47.8k result
+          </h1>
+          <select class="bg-black" name="" id="" title="">
+            <option value="relevance" selected>Relevance</option>
+            <option value="relevance">Demo1</option>
+            <option value="relevance">Demo2</option>
+            <option value="relevance">Demo3</option>
+          </select>
+        </div>
+        <!-- mobile view "what would you like to create today" -->
+        <div class="px-4 flex items-center justify-between sm:hidden">
+          <div class="">
+            <h1>
+              What would you like to<br />
+              create today?
+            </h1>
+          </div>
+          <div>
+            <button class="cursor-pointer rounded-lg">
+              <i class="fas fa-chevron-left px-4"></i>
+            </button>
+            <button type="button" class="cursor-pointer rounded-lg">
+              <i class="fas fa-chevron-right mr-2"></i>
+            </button>
+          </div>
+        </div>
+        <!-- mobile view boxes -->
+        <div class="relative">
+          <div class=" mt-3.5 mr-2.5 overflow-x-auto scrollbar-hide sm:hidden scroll-smooth flex items-center">
+            <div class="px-3 flex gap-2 scroll-mx-auto">
+              <div
+                class="min-w-30 h-30 bg-primary flex flex-col gap-px items-center justify-around rounded-lg cursor-pointer">
+                <p>🔍</p>
+                <h1 class="-mt-16">Find Stock</h1>
+              </div>
+              <div
+                class="min-w-30 h-30 bg-primary flex flex-col gap-px items-center justify-around rounded-lg cursor-pointer">
+                <p>🔗</p>
+                <h1 class="-mt-16">Spaces</h1>
+              </div>
+              <div
+                class="min-w-30 h-30 bg-primary flex flex-col gap-px items-center justify-around rounded-lg cursor-pointer">
+                <p>🖇️</p>
+                <h1 class="-mt-16">Spaces</h1>
+              </div>
+              <div
+                class="min-w-30 h-30 bg-primary flex flex-col gap-px items-center justify-around rounded-lg cursor-pointer">
+                <p>🔗</p>
+                <h1 class="-mt-16">Spaces</h1>
+              </div>
+              <div
+                class="min-w-30 h-30 bg-primary flex flex-col gap-px items-center justify-around rounded-lg cursor-pointer">
+                <p>🔗</p>
+                <h1 class="-mt-16">Spaces</h1>
+              </div>
+            </div>
+            <div class="py-2 w-8 h-30 bg-linear-to-l from-darkBlue absolute right-0 pointer-events-none to-transparent">
+            </div>
+          </div>
+        </div>
+        <!-- "all tools" button for mobile view -->
+        <div class="mt-4 mb-9 flex items-center justify-around sm:hidden">
+          <button class="bg-primary rounded-full px-2 max-w-fit">
+            ::: All Tools
+          </button>
+        </div>
+        <!-- mobile view recent creations -->
+        <div class="px-4 flex gap-6 sm:hidden">
+          <h1 class="font-semibold">Recent Creations</h1>
+          <h1 class="font-semibold">Personal <i class="fas fa-chevron-down"></i></h1>
+        </div>
+        <!-- navigation bar mobile view and desktop view-->
+        <div class="relative">
+          <div class="overflow-x-auto scrollbar-hide flex">
+            <nav class="flex items-center">
+              <ul id="list_item" class="py-2 mt-1.5 px-3 flex items-center gap-1 content-center">
+                <li
+                  class="active border rounded-full whitespace-nowrap hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white text-white text-center px-2 sm:border-2 sm:bg-primary">
+                  <a class="-space-x-2 inline" href="#">All</a>
+                </li>
+                <li
+                  class="border rounded-full hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">license</a>
+                </li>
+                <li
+                  class="border rounded-full whitespace-nowrap hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">Ai Genarated</a>
+                </li>
+                <li
+                  class="border rounded-full hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">Oriantation</a>
+                </li>
+                <li
+                  class="border rounded-full hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">Color</a>
+                </li>
+                <li
+                  class="border rounded-full hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">People</a>
+                </li>
+                <li
+                  class="border rounded-full whitespace-nowrap hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">File Type</a>
+                </li>
+                <li
+                  class="border rounded-full whitespace-nowrap hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">Editable Online</a>
+                </li>
+                <li
+                  class="border rounded-full hover:bg-white hover:text-black sm:hover:bg-black sm:hover:text-white sm:bg-primary text-white text-center px-2 sm:border-2">
+                  <a href="#">Advanced</a>
+                </li>
+              </ul>
+            </nav>
+            <div
+              class="py-2 mt-1.5 w-24 h-10 bg-linear-to-l from-darkBlue absolute right-0 pointer-events-none to-transparent">
+            </div>
+          </div>
+        </div>
+        <!--" no creation found for "mobile view -->
+        <div class="px-4 mt-3 sm:hidden">
+          <div class="p-6 w-50 h-45 border border-white border-dashed text-center">
+            <h1>No creations found</h1>
+            <button class="border rounded-full px-0.5 bg-primary border-transparent mt-1">
+              + New
+            </button>
+          </div>
+        </div>
+        <!-- "view project" button for mobile view -->
+        <div class="mt-4 mb-9 flex items-center justify-around sm:hidden">
+          <button class="bg-primary rounded-full px-2 max-w-fit">
+            View project >
+          </button>
+        </div>
+        <!-- get inspires text mobile view -->
+        <div class="sm:hidden">
+          <h1 class="px-4 font-semibold">Get inspired</h1>
+        </div>
+        <!-- mobile veiw next navigation bar "that is top the pictuer and vedio content" -->
+        <nav class="px-4 sm:hidden">
+          <div class="flex items-center">
+            <div class="relative max-w-68">
+              <div class="flex items-center overflow-x-auto scrollbar-hide">
+                <div class="flex items-center">
+                  <ul id="next_list" class="flex items-center gap-2.5">
+                    <li
+                      class="border border-gray-500 rounded-full bg-black px-2 hover:bg-white hover:text-black active">
+                      <a href="#">Templates</a>
+                    </li>
+                    <li class="border border-gray-500 rounded-full bg-black px-2 hover:bg-white hover:text-black">
+                      <a href="#">Community</a>
+                    </li>
+                    <li class="border border-gray-500 rounded-full bg-black px-2 hover:bg-white hover:text-black">
+                      <a href="#">Build</a>
+                    </li>
+                    <li class="border border-gray-500 rounded-full bg-black px-2 hover:bg-white hover:text-black">
+                      <a href="#">Creations</a>
+                    </li>
+                    <li class="border border-gray-500 rounded-full bg-black px-2 hover:bg-white hover:text-black">
+                      <a href="#">Templates</a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="py-2 w-10 h-10 bg-linear-to-l from-black  absolute right-0 to-transparent">
+                </div>
+              </div>
+            </div>
+            <div class="pl-48 px-14 w-20 h-20  py-2 flex gap-3 items-center sticky right-5">
+              <div class="flex gap-3 items-center"><i class="fas fa-chevron-right cursor-pointer"></i>
+              <i class="fas fa-search cursor-pointer"></i>
+              <i class="fas fa-ellipsis-v cursor-pointer"></i>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <!--image slide section-->
+        <section
+          class="p-4 mt-3.5 container mx-auto grid grid-cols-2 items-center justify-center content-center gap-1 sm:grid-cols-3 lg:grid-cols-4 sm:items-center">
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/img-u.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/la.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/progress2.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/earth.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/window.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/progress.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/saladt.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/galaxy.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/salad.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/chef1.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around cursor-pointer h-45 md:h-50">
+            <img src="image/laptop.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/img-3.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/progress.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/img-u.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/artificial.jpg" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+          <div class="bg-primary rounded-lg flex flex-col items-center justify-around h-45 cursor-pointer md:h-50">
+            <img src="image/img-3.png" alt="" class="w-40 h-30 rounded-lg mt-3 p-1 lg:w-45 lg:h-40" />
+            <p>Trun product i...</p>
+          </div>
+        </section>
+        <!-- button  -->
+        <div class="mt-5 mb-6 flex items-center justify-around sm:hidden">
+          <a href="#" class="border-2 px-2.5 rounded-full">Explore all templates <i
+              class="fas fa-chevron-right"></i></a>
+        </div>
+        <!-- all footer section -->
+        <footer>
+          <!-- mobile view footer -->
+          <section class="sm:hidden">
+            <div class="p-8">
+              <h1 class="text-2xl">What's new</h1>
+            </div>
+            <div class="min-h-44 overflow-x-auto overflow-y-hidden mb-3.5">
+              <div class="flex items-center container mx-auto">
+                <!-- slide 1 -->
+                <div class="px-4">
+                  <img src="image/earth.png" alt="" class="rounded-2xl min-w-52 max-h-24" />
+                  <p>Enter your pro era with this flash deal</p>
+                </div>
+                <!-- slide 2 -->
+                <div class="px-4">
+                  <img src="image/galaxy.png" alt="" class="rounded-2xl min-w-52 max-h-24" />
+                  <p>One model for image and video crations</p>
+                </div>
+                <!-- slide 3 -->
+                <div class="px-4">
+                  <img src="image/img-5.png" alt="" class="rounded-2xl min-w-52 max-h-24" />
+                  <p>Genarate multiple models for your video</p>
+                </div>
+                <!-- slide 4 -->
+                <div class="px-4">
+                  <img src="image/artificial.jpg" class="rounded-lg min-w-52 max-h-24"></img>
+                  <p>Change only what you need and you want</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- desktop view load more section -->
+          <section class="hidden sm:block">
+            <div class="px-10 mt-42 flex justify-center">
+              <button class="w-3xl rounded border text-center cursor-pointer">Load more</button>
+            </div>
+            <!-- text and boxes -->
+            <div class="mt-6 text-center">
+              <div>
+                <h1>The inspiration doesn't here</h1>
+                <p>
+                  Comvine stock with AI and turn your ideas into uniqe result
+                </p>
+              </div>
+            </div>
+            <div class="mt-5 mb-3.5 px-4">
+              <div class="flex items-center gap-3 justify-center">
+                <!-- slide 1 -->
+                <div class="w-56 flex items-center justify-center gap-0.5 bg-gray-500 min-h-24 rounded-lg">
+                  <img src="image/img-u.png" alt="" class="px-1.5 rounded-2xl max-w-20 min-h-20 -ml-5" />
+                  <div>
+                    <h1 class="text-left -mt-7">Spaces</h1>
+                    <p class="text-left">crate your image</p>
+                  </div>
+                </div>
+                <!-- slide 2 -->
+                <div class="w-56 flex items-center justify-center gap-0.5 bg-gray-500 min-h-24 rounded-lg">
+                  <img src="image/img-u.png" alt="" class="px-1.5 rounded-2xl max-w-20 min-h-20 -ml-5" />
+                  <div>
+                    <h1 class="text-left -mt-7">Spaces</h1>
+                    <p class="text-left">crate your image</p>
+                  </div>
+                </div>
+                <!-- slide 3 -->
+                <div class="w-56 md:flex items-center justify-center gap-0.5 bg-gray-500 min-h-24 rounded-lg sm:hidden">
+                  <img src="image/img-u.png" alt="" class="px-1.5 rounded-2xl max-w-20 min-h-20 -ml-5" />
+                  <div>
+                    <h1 class="text-left -mt-7">Spaces</h1>
+                    <p class="text-left">crate your image</p>
+                  </div>
+                </div>
+                <!-- slide 4 -->
+                <div class="w-56 lg:flex items-center justify-center gap-0.5 bg-gray-500 min-h-24 rounded-lg sm:hidden">
+                  <img src="image/img-u.png" alt="" class="px-1.5 rounded-2xl max-w-20 min-h-20 -ml-5" />
+                  <div>
+                    <h1 class="text-left -mt-7">Spaces</h1>
+                    <p class="text-left">crate your image</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr class="text-gray-500" />
+          <!-- desktop view footer -->
+            <section class="hidden sm:block py-4 px-6 container mx-auto">
+        <div class="mt-10 flex flex-col justify-center gap-20 md:flex-row">
+          <div class="text-center md:text-left">
+            <h1 class="font-bold">FREEPIK</h1>
+            <p class="text-gray-400">Products</p>
+            <ul>
+              <li class="text-blue-600 hover:underline">AI Assistant</li>
+              <li class="text-blue-600 hover:underline">Ai Image Generator</li>
+              <li class="text-blue-600 hover:underline">Ai video Genarator</li>
+              <li class="text-blue-600 hover:underline">API</li>
+              <li class="text-blue-600 hover:underline">Android</li>
+              <li class="text-blue-600 hover:underline">iOS</li>
+              <li class="text-blue-600 hover:underline">All Freefik tools</li>
+            </ul>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-gray-400 md:mt-6">Get Started</p>
+            <ul>
+              <li class="text-blue-600 hover:underline">Pricing</li>
+              <li class="text-blue-600 hover:underline">Affilitates</li>
+              <li class="text-blue-600 hover:underline">Enterpreter</li>
+              <li class="text-blue-600 hover:underline">FAQ</li>
+              <li class="text-blue-600 hover:underline">Documentation</li>
+              <li class="text-blue-600 hover:underline">Terms of use</li>
+              <li class="text-blue-600 hover:underline">Privacy and policy</li>
+              <li class="text-blue-600 hover:underline">cockies policy</li>
+              <li class="text-blue-600 hover:underline">cockies setting</li>
+            </ul>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-gray-400 md:mt-6">Company</p>
+            <ul>
+              <li class="text-blue-600 hover:underline">About us</li>
+              <li class="text-blue-600 hover:underline">Carrers</li>
+              <li class="text-blue-600 hover:underline">Search_trends</li>
+              <li class="text-blue-600 hover:underline">Blog</li>
+              <li class="text-blue-600 hover:underline">Events</li>
+              <li class="text-blue-600 hover:underline">Magnific</li>
+              <li class="text-blue-600 hover:underline">Slidego</li>
+              <li class="text-blue-600 hover:underline">Help Center</li>
+            </ul>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-gray-400 mb-3 md:mt-6">Get in touch</p>
+            <div class="mb-3 flex gap-4 items-center justify-center">
+              <ul>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-github"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+              </ul>
+              <ul>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fas fa-map-marker-alt"></i></li>
+              </ul>
+            </div>
+            <div>
+              <select name="" id="" class="bg-gray-600">
+                <option value="english">English</option>
+                <option value="english">langauge</option>
+                <option value="english">English</option>
+              </select>
+            </div>
+            <h6>Copyright ©️ 2020-2028 Freefik Company</h6>
+            <p>All Right Reserved</p>
+          </div>
+        </div>
+            </section>
+        </footer>
+      </div>
+    </div>
+  </div>
+<script src="script.js" type="module">
+</script>
+</body>
+</html>

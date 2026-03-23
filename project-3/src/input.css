@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+/* @plugin "tailwind-scrollbar-hide"; */
+
+
+/* hide scrollbar by menually */
+@utility scrollbar-hide {
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+};
+
+
+@theme {
+    --breakpoint-sm: 30rem;/* 480px */
+    --breakpoint-md: 48rem;/* 810px */
+    --breakpoint-lg: 78rem;/* 1056px */
+    --breakpoint-xl: 90rem;/* 1440px */         
+}
+
+.cross{
+    display: none;
+}
+
+.bar_line2{
+    display: none;
+}
+
+.child_li{
+    display: none;
+}
+
+.active{
+    border: 1px dashed grey;
+}
+
+

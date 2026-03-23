@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <title>Microsoft</title>
+</head>
+<body class="w-screen">
+   <header> 
+      <div class="p-6 h-14 flex items-center justify-between bg-white ">
+         <!-- hambarger -->
+         <div class="relative flex items-center gap-4.5 md:hidden">
+            <div id="hambargar">
+               <i id="header_bar_icon" class="fas fa-bars"></i>
+               <i id="crossIcon" class="fas fa-times cross"></i>
+            </div>
+         <div>
+            <input type="search" class="hidden">
+            <i class="fas fa-search"></i>
+         </div>
+       </div>
+       <!-- Microsoft logo icon -->
+      <div>
+         <img src="image/image1.png" alt="microsoft logo" class="w-fit h-6">
+      </div>
+      <!-- navlist -->
+       <div class="md:flex items-center justify-between gap-10 lg:gap-30 hidden">
+         <div>
+            <ul class="flex items-center whitespace-nowrap gap-5">
+               <li><a href="#" class="hover:text-indigo-900 cursor-pointer">Microsoft 365</a></li>
+               <li><a href="#" class="hover:text-indigo-900 cursor-pointer">Teams</a></li>
+               <li><a href="#" class="hover:text-indigo-900 cursor-pointer">Copilot</a></li>
+               <li class="hidden lg:block"><a href="#" class="hover:text-indigo-900 cursor-pointer">Windows</a></li>
+               <li class="hidden lg:block"><a href="#" class="hover:text-indigo-900 cursor-pointer">Surface</a></li>
+               <li class="hidden lg:block"><a href="#" class="hover:text-indigo-900 cursor-pointer">Windows</a></li>
+               <li class="hidden lg:block"><a href="#" class="hover:text-indigo-900 cursor-pointer">Surface</a></li>
+               <li><a href="#" class="hover:text-indigo-900 cursor-pointer">Xbox</a></li>
+               <li id="nav" class="group relative p-2 cursor-pointer rounded-full hover:bg-gray-100">More
+                  <ul id="item" class="p-4 absolute top-13 bg-white w-50 h-70 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-color duration-400">
+                     <li class="p-2 rounded-full hover:bg-gray-100"><a href="#">Community</a></li>
+                     <li class="p-2 rounded-full hover:bg-gray-100" class="p-2"><a href="#">Microsoft School</a></li>
+                     <li class="p-2 rounded-full hover:bg-gray-100" class="p-2"><a href="#">Company</a></li>
+                     <li class="p-2 rounded-full hover:bg-gray-100" class="p-2"><a href="#">Products</a></li>
+                     <li class="p-2 rounded-full hover:bg-gray-100" class="p-2"><a href="#">Contacts</a></li>
+                     <li class="p-2 rounded-full hover:bg-gray-100" class="p-2"><a href="#">Founder</a></li>
+                  </ul>
+                  <i class="fas fa-chevron-down"></i>
+               </li>
+            </ul>
+         </div>
+       </div>
+       <!-- search icon shop icon sign in-->
+       <div class="flex items-center gap-4">
+         <div class="hidden md:block">
+            <button class="whitespace-nowrap">All Microsoft</button>
+            <i class="fas fa-chevron-down"></i>
+         </div>
+         <div class="flex gap-3">
+            <a href="#" class="hidden md:block cursor-pointer"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart w-3 h-3 cursor-pointer"></i></a>
+            <a href="#" ><i class="fas fa-user-plus cursor-pointer"></i></a>
+         </div>
+         </div>
+      </div>
+       <!-- mobile view navlist -->
+      <div id="hambargar_nav" class="hidden overflow-y-auto z-50 h-screen absolute bg-white w-full">
+         <div class="">
+            <ul id="list_item" class="">
+               <li class="active px-5 py-4 mb-0.5 text-gray-800"><a href="#">Microsoft 365</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Teams</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Windows</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Surface</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Xbox</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Deals</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Shop Small Business</a></li>
+               <li class="px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"><a href="#">Support</a></li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800 cursor-pointer">Software
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800">PC & Devices
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800">Entertainment
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800">Business
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800">Developer & IT
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800"> Other 
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul></li>
+               <li class="parent-li px-5 mb-0.5 py-4 outline outline-gray-300 text-gray-800">Siteman
+                  <i class="fas fa-chevron-down float-right"></i>
+                  <ul class="hidden child-ul">
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a class="text-gray-800" href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                     <li class="px-5 mb-0.5 py-3.5      border-b border-gray-400"><a href="#">Demo</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <!-- hero image -->
+   <div class="">
+      <img src="image/image3.png" alt="" class="w-full h-78 md:h-180 ">
+      <!-- hero text -->
+         <div class="p-14 absolute top-45 max-w-139 hidden md:block">
+            <div class="space-y-2.5">
+               <img src="image/image1.png" alt="MICROSOFT LOGO">
+               <h1 class="py-3 mb-4 text-5xl text-white font-semibold">The apps you know go further with Copilot</h1>
+               <p class="mb-12 text-gray-100">Get insights in an instant with Copilot in Excell</p>
+               <button class="bg-white p-3.5 rounded-lg font-semibold">Try it now</button>
+            </div>
+          </div>
+         <!-- mobile view windows published Hero text-->
+         <div  class="h-100 p-5 bg-linear-to-br from-blue-800 md:hidden">
+            <img class="mt-8 h-10" src="image/image1.png" alt="">
+            <h1 class="text-3xl mb-10">Meet the computer you can talk to</h1>
+            <p class="mb-10">We typed, we clicked, now we're talking</p>
+            <button><a class="border border-transparent w-full bg-blue-500 rounded-lg p-2 text-white">Meet Windows 11</a></button>
+         </div>
+         <!-- play button -->
+         <div class="p-4 mb-20 flex items-center justify-between">
+            <div class="w-8 h-8 border rounded-full text-center">
+               <a href="#"><i class="fas fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="flex items-center gap-1.5">
+               <a href="#"><i>-</i></a>
+               <a href="#"><i>-</i></a>
+               <a href="#" class="w-8 h-8 border border-dotted text-center rounded-lg outline"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="w-8 h-8 border rounded-full text-center">
+               <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+         </div>
+   </div>
+   <!-- question section -->
+   <div class="h-85 bg-blue-800 m-8 rounded-xl mb-20">
+      <h1 class="mb-4 p-3 text-3xl text-center text-white">Hi there. How can we help?</h1>
+      <div class="px-4 container mx-auto">
+         <div class="relative py-3">
+            <input name="" id="" class="px-6 w-full h-15 bg-white outline-none rounded-lg " placeholder="Have question? Ask me question"></input>
+            <div class="absolute right-8 top-1/2 -translate-y-1/2">
+               <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+         </div>
+      </div>
+      <!--your mind question quick link -->
+      <div class="mt-6 flex flex-col items-center justify-center md:gap-3 md:flex-row">
+         <div class="text-center border border-white text-white bg-blue-500 px-3 py-0.5 mb-2 rounded-full "><a href="#">Which PC is right for me?</a></div>
+         <div class="text-center border border-white text-white bg-blue-500 px-3 py-0.5 mb-2 rounded-full"><a href="">Sign in to my account</a></div>
+         <div class="text-center border border-white text-white bg-blue-500 px-3 py-0.5 mb-2 rounded-full"><a href="">How can AI help my business</a></div>
+      </div>
+   </div>
+   <!--quick link section -->
+   <div class="mb-10 p-6 container mx-auto grid grid-cols-2  flex-wrap gap-12 items-center justify-center max-w-5xl sm:flex sm:gap-20">
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-box text-blue-500"></i>
+         <a href="#" class="text-center whitespace-nowrap underline text-blue-500">Shop Surface devices</a>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-solid fa-gamepad text-blue-500"></i>
+         <a href="#" class="underline text-center text-blue-500">Shop Xbox games consoles</a>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-keyboard text-blue-500"></i>
+         <a href="#" class="text-center whitespace-nowrap underline text-blue-500">Shop for accessories</a>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-building text-blue-500"></i>
+         <a href="#" class="underline text-center text-blue-500">Shop for your business</a>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-laptop text-blue-500"></i>
+         <a href="#" class="underline text-center text-blue-500">Find your next PC</a>
+      </div>
+      <div class="flex flex-col items-center mb-8">
+         <i class="fas fa-border-all text-blue-500"></i>
+         <a href="#" class="underline text-center text-blue-500">Choose your microsoft 365</a>
+      </div>
+   </div>
+   <!-- product card -->
+   <div class="p-8 lg:m-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+         <div class="relative h-140 rounded-lg shadow-[0_0_5px_gray]">
+            <div class="p-4">
+               <img src="image/image4.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Purchase select Xbox Series X, get a protection plan</h1>
+               <p class="text-indigo-950">
+                  Get a 3 year Microsoft Complete protection plan bundled with your purchase of select Xbox Series X consoles. offer ends 3/31
+               </p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit ">Shop Series X</button>
+            </div>
+         </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_5px_gray]">
+            <div class="p-4">
+               <img src="image/image5.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Up to $500 cash back with trade in</h1>
+               <p class="text-indigo-950">Buy a select new Surface Laptop, Copilot+ PC by 3/31 and get extra cash back with a qualifying trade-in</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Shop now</button>
+            </div>
+         </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_5px_gray]">
+            <div class="p-4">
+               <img src="image/image6.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Laptop productivity</h1>
+               <p class="text-indigo-950">Built to keep you on the go, Surface Pro delivers AI-accelerated experiences, all day battery life and more</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Shop Surface Pro</button>
+               </div>
+            </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_5px_gray]">
+            <div class="p-4">
+               <img src="image/image7.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Xbox Game Pass Ultimate</h1>
+               <p class="text-indigo-950">Play new titles on day one. Enjoy Hundreds of high-quality games with friends on console, PC or cloud</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">join now</button>
+            </div>
+         </div>
+      </div>
+      <!-- horigontal card in desktop view -->
+      <div>
+         <div class="relative h-140 md:flex flex-row-reverse md:h-110 rounded-lg shadow-[0_0_5px_gray]">
+            <div class="p-4 md:w-1/2">
+               <img src="image/image8.png" alt="image" class=" w-full h-48 rounded-xl md:h-full">
+            </div>
+            <div class="p-4 md:w-1/2 md:mt-16">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Accessories you'll love</h1>
+               <p class="text-indigo-950">Mice,Keybords,docks, and chargers-designed to keep you comfortable, charged up, and ready to take on anything, form anywhere</p>
+               <button class="p-2 bg-blue-600 absolute bottom-10 rounded-lg text-white w-fit">Learn more</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- for business section -->
+   <div class="p-8 bg-cyan-50">
+      <h1 class="text-2xl text-indigo-950 mb-4 font-semibold lg:m-16">For Business</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-16 lg:m-16">
+         <div class="relative h-140 rounded-lg shadow-[0_0_4px_gray] bg-white">
+            <div class="p-4">
+               <img src="image/image9.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Purchase select Xbox Series X, get a protection plan</h1>
+               <p class="text-indigo-950">
+                  Get a 3 year Microsoft Complete protection plan bundled with your purchase of select Xbox Series X consoles. offer ends 3/31
+               </p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Shop now</button>
+            </div>
+         </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_4px_gray] bg-white">
+            <div class="p-4">
+               <img src="image/image10.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class="mb-6 text-xl font-semibold text-indigo-950">Up to $500 cash back with trade in</h1>
+               <p class="text-indigo-950">Buy a select new Surface Laptop, Copilot+ PC by 3/31 and get extra cash back with a qualifying trade-in</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Learn more</button>
+            </div>
+         </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_4px_gray] bg-white">
+            <div class="p-4">
+               <img src="image/image15.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Join the era of AI</h1>
+               <p class="text-indigo-950">Creat, communicate, and code with the latest Microsoft AI solutions</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Explore AI solutions</button>
+            </div>
+         </div>
+         <div class="relative h-140 rounded-lg shadow-[0_0_4px_gray] bg-white">
+            <div class="p-4">
+               <img src="image/image11.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Xbox Game Pass Ultimate</h1>
+               <p class="text-indigo-950">Play new titles on day one. Enjoy Hundreds of high-quality games with friends on console, PC or cloud</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Download Visul Studio 2026</button>
+            </div>
+         </div>
+      </div>
+      <!-- AI and Copilot section -->
+      <h1 class="text-2xl text-indigo-950 mb-4 font-semibold lg:m-16">Get to know AI and Copilot</h1>
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-3 lg:m-16">
+         <div class="relative h-150 rounded-lg shadow-[0_0_5px_gray] bg-white mb-4">
+            <div class="p-4">
+               <img src="image/image14.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-4 text-xl font-semibold text-indigo-950">Giving every language a voice</h1>
+               <p class="text-indigo-950">The Microsoft AI for Good Lab is helping global communities preserve low-resource language, making AI accessible for all</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Learn more</button>
+            </div>
+         </div>
+         <div class="relative h-150 rounded-lg shadow-[0_0_5px_gray] bg-white mb-4">
+            <div class="p-4">
+               <img src="image/image15.png" alt="image" class=" w-full h-48 rounded-xl">
+            </div>
+            <div class="p-4">
+               <h1 class=" mb-4 text-xl font-semibold text-indigo-950">On second Thought: AI and the Future of Work</h1>
+               <p class="text-indigo-950">Futurist sinead Bowell and Colettle Stallbaumer, The General Manager of M365 Copilot unpack how AI is reshaping the workplace</p>
+               <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Strem the episode</button>
+            </div>
+         </div>
+         <div class="relative h-150 rounded-lg shadow-[0_0_5px_gray] bg-white mb-6">
+            <div class="p-4">
+               <img src="image/image16.png" alt="image" class=" w-full h-48 rounded-xl">
+               </div>
+               <div class="p-4">
+                  <h1 class=" mb-4 text-xl font-semibold text-indigo-950">Turning words into apps</h1>
+                  <p class="text-indigo-950">'Vibe coding' allows people to build software by talking through an idea with a Microsoft AI tool that writes the code</p>
+                  <button class="p-2 bg-blue-600 absolute bottom-6 rounded-lg text-white w-fit">Learn more</button>
+               </div>
+            </div>
+      </div>
+   </div>
+   <!-- horizontal card section -->
+   <div class="p-8 overflow-x-auto flex gap-3.5 scrollbar-hide lg:m-16">
+      <div class="relative h-160 rounded-lg shadow-[0_0_5px_gray] flex-row-reverse min-w-[88%] md:flex md:h-100">
+         <div class="p-4 md:w-1/2">
+            <img src="image/image12.png" alt="image" class=" w-full h-56 rounded-xl md:h-full">
+         </div>
+         <div class="p-4 md:w-1/2 md:mt-16">
+            <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Accessories you'll love</h1>
+            <p class="text-indigo-950">Mice,Keybords,docks, and chargers-designed to keep you comfortable, charged up, and ready to take on anything, form anywhere</p>
+            <button class="p-2 bg-blue-600 absolute bottom-10 rounded-lg text-white w-fit">Read the Story</button>
+         </div>
+      </div>
+      <div class="relative h-160 rounded-lg shadow-[0_0_5px_gray] flex-row-reverse min-w-[88%] md:flex md:h-100">
+         <div class="p-4 md:w-1/2">
+            <img src="image/image13.png" alt="image" class=" w-full h-56 rounded-xl md:h-full">
+         </div>
+         <div class="p-4 md:w-1/2 md:mt-16">
+            <h1 class=" mb-6 text-xl font-semibold text-indigo-950">Accessories you'll love</h1>
+            <p class="text-indigo-950">Mice,Keybords,docks, and chargers-designed to keep you comfortable, charged up, and ready to take on anything, form anywhere</p>
+            <button class="p-2 bg-blue-600 absolute bottom-10 rounded-lg text-white w-fit">Read the Story</button>
+         </div>
+      </div>
+   </div>
+   <!--  -->
+   <div class="p-4 flex items-center justify-between">
+      <div>
+         <button class="border rounded-full w-8 h-8 text-center"><a href="#"><i class="fas fa-arrow-left"></i></a></button>
+         <button class="border rounded-full w-8 h-8 text-center"><a href="#"><i class="fas fa-arrow-right"></i></a></button>
+      </div>
+      <div>
+         <button class="border-2 rounded-lg w-8 h-8 text-center"><a href="#"><i class="fas fa-pause"></i></a></button>
+      </div>
+   </div>
+      <!-- footer section -->
+      <div class="p-4">
+            <h1 class="text-center text-xl">Follow Microsoft</h1>
+            <div class="flex items-center justify-center gap-8">
+             <a href="#"><i class="fab fa-facebook text-blue-600"></i></a>
+             <a href="#"><i class="fab fa-twitter text-blue-600"></i></a>
+             <a href="#"><i class="fab fa-linkedin text-blue-600"></i></a>
+            </div>
+      </div>
+      <!-- quick link footer section -->
+      <div class="p-4 bg-gray-300 lg:flex justify-between ">
+            <div class="mb-6">
+               <h1 class="mb-3 text-lg">What's new</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Surface Pro</a></li>
+                  <li><a href="#">Surface Laptop</a></li>
+                  <li><a href="#">Surface Laptop Studio 2</a></li>
+                  <li><a href="#">Copilot for organization</a></li>
+                  <li><a href="#">Surface Pro</a></li>
+                  <li><a href="#">AI in Windows</a></li>
+                  <li> <a href="">Explore Microsoft Products</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mb-6">               
+               <h1 class="mb-3 text-lg">Microsoft Store</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Account profile</a></li>
+                  <li><a href="#">Download center</a></li>
+                  <li><a href="#">Microsoft Store support</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Certified Refurbished</a></li>
+                  <li><a href="#">Microsoft Store promise</a></li>
+                  <li> <a href="">Flexible Payments</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mb-6">
+               <h1 class="mb-3 text-lg">Education</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Microsoft in education</a></li>
+                  <li><a href="#">Devices for education</a></li>
+                  <li><a href="#">Microsoft team for education</a></li>
+                  <li><a href="#">Microsoft 365 education</a></li>
+                  <li><a href="#">How to buy for your school</a></li>
+                  <li><a href="#">Educator training and development</a></li>
+                  <li> <a href="">Deals for students and parentys</a></li>
+                  <li> <a href="">AI for education</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mb-6">
+               <h1 class="mb-6 text-lg">Business</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Microsoft AI</a></li>
+                  <li><a href="#">Microsoft Security</a></li>
+                  <li><a href="#">Dynamic 365</a></li>
+                  <li><a href="#">Microsoft 365</a></li>
+                  <li><a href="#">Microsoft power platform</a></li>
+                  <li><a href="#">Microsoft Team</a></li>
+                  <li> <a href="">Microsoft 365 Copilot</a></li>
+                  <li> <a href="">Small Business</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mb-6">
+               <h1 class="mb-6 text-lg">Developer & IT</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Azure</a></li>
+                  <li><a href="#">Microsoft Developer</a></li>
+                  <li><a href="#">Support for AI markateplace app</a></li>
+                  <li><a href="#">Microsoft Tech Company</a></li>
+                  <li><a href="#">Microsoft marketeplace</a></li>
+                  <li><a href="#">Marketeplace Rewards</a></li>
+                  <li> <a href="">Visul Studio</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="mb-6">
+               <h1 class="mb-6 text-lg">Developer & IT</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Azure</a></li>
+                  <li><a href="#">Microsoft Developer</a></li>
+                  <li><a href="#">Support for AI markateplace app</a></li>
+                  <li><a href="#">Microsoft Tech Company</a></li>
+                  <li><a href="#">Microsoft marketeplace</a></li>
+                  <li><a href="#">Marketeplace Rewards</a></li>
+                  <li> <a href="">Visul Studio</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <h1 class="mb-6 text-lg">Company</h1>
+               <div>
+                  <ul class="space-y-2 text-gray-700 text-sm">
+                  <li><a href="">Careers</a></li>
+                  <li><a href="#">About Microsoft</a></li>
+                  <li><a href="#">Company news</a></li>
+                  <li><a href="#">Privacy at Microsoft</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Diversity and inclusion</a></li>
+                  <li> <a href="">Sustainabilliy</a></li>
+                  </ul>
+               </div>
+            </div>
+      </div>
+      <div class="p-4 bg-gray-300 ">
+            <div class="mb-2">
+               <i class="fas fa-globe"></i>
+               <h1>English (United States)</h1>
+            </div>
+            <div class="mb-3 flex gap-1.5 items-center">
+               <div class="w-8 h-4 border-2 border-blue-600 rounded-lg bg-linear-to-l from-blue-600">
+               </div>
+               <p class="text-[13px] text-gray-500">Your Privacy Choices</p>
+            </div>
+            <div class="text-[13px] text-gray-500">
+               <p class="mb-3">Consumer Health Privacy</p>
+               <div class="flex gap-10 flex-wrap">
+                  <p>Sitemap</p>
+                  <p>Contact Microsort</p>
+                  <p>Privacy</p>
+                  <p>Terms of use</p>
+                  <p>Trademarks</p>
+                  <p>Safty & eco</p>
+                  <p>Recycling</p>
+                  <p>About out Ads</p>
+                  <p>&copy; Microsoft 2026</p>
+               </div>
+            </div>
+      </div>
+      <script src="script.js" type="module"></script>
+   </body>
+</html>
